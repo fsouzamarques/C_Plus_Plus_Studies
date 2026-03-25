@@ -10,3 +10,32 @@
 //If that year is evenly divisible by 400, then it is a leap year.
 //Take some time to research and brainstorm before starting to write the code!
 
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  
+  int year;
+
+cout << "Welcome to the Leap Year Check!" << endl;
+cout << "Insert the year to start:" << endl;
+cin >> year;
+
+if (year < 1000 || year > 9999) {
+
+  cout << "Invalid Entry, try again." << endl;
+
+}
+
+else if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+
+  cout << year << " falls on a leap year." << endl;
+
+}
+
+else {
+  cout << year << " is not a leap year." << endl;
+}
+  
+}
