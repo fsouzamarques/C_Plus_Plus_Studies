@@ -25,11 +25,17 @@ vector<char> result;
 
 for (int i = 0; i < phrase.size(); i++) {
 
+if (phrase[i] == 'u' || phrase[i] == 'e') {
+
+result.push_back(phrase[i]);
+        
+}
+
 for (int j = 0; j < vowels.size(); j++) {
 
 if (phrase[i] == vowels[j]) {
 
-  result.push_back(phrase[i]);
+result.push_back(phrase[i]);
 }
 
 }
@@ -38,11 +44,11 @@ if (phrase[i] == vowels[j]) {
 
 for (int m = 0; m <result.size(); m++) {
 
-cout << result[m] << endl;
+cout << result[m];
 
 }
+
+cout << " " << endl;
 
   return 0;
 }
-
-//first version done
